@@ -1,0 +1,501 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>coded-aesthetics - </title>
+
+  <meta name="description" content="How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix using ray marching and dual-script optimization"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "coded-aesthetics",
+    
+    "url": "http:\/\/localhost:1313\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/localhost:1313\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/posts\/ray-marching-cosmic-unicorn\/",
+          "name": ""
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Jan"
+  },
+  "headline": "",
+  "description" : "How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix using ray marching and dual-script optimization",
+  "inLanguage" : "en",
+  "wordCount":  1464 ,
+  "datePublished" : "2025-08-07T13:21:40\u002b02:00",
+  "dateModified" : "2025-08-07T13:21:40\u002b02:00",
+  "image" : "http:\/\/localhost:1313\/images\/squid.png",
+  "keywords" : [ "ray-marching, 3d-graphics, raspberry-pi, micropython, cosmic-unicorn" ],
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/posts\/ray-marching-cosmic-unicorn\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/localhost:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/localhost:1313\/images\/squid.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="coded-aesthetics" />
+<meta property="og:description" content="How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix using ray marching and dual-script optimization">
+<meta property="og:image" content="http://localhost:1313/images/squid.png" />
+<meta property="og:url" content="http://localhost:1313/posts/ray-marching-cosmic-unicorn/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="coded-aesthetics" />
+
+  <meta name="twitter:title" content="coded-aesthetics" />
+  <meta name="twitter:description" content="How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix using ray marching and dual-script optimization">
+  <meta name="twitter:image" content="http://localhost:1313/images/squid.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.148.2">
+  <link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="coded-aesthetics"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://localhost:1313/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="http://localhost:1313/css/syntax.css" /><link rel="stylesheet" href="http://localhost:1313/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:1313/">coded-aesthetics</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="coded-aesthetics" href="http://localhost:1313/">
+            <img class="avatar-img" src="http://localhost:1313/images/squid.png" alt="coded-aesthetics" />
+           
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  <div class="intro-header"></div>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="building-a-real-time-ray-marching-renderer-for-the-cosmic-unicorn">Building a Real-Time Ray Marching Renderer for the Cosmic Unicorn</h1>
+<p><em>How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix</em></p>
+<hr>
+<p><img src="/images/ezgif-6a87ddae8c0d19.gif" alt="/images/ezgif-6a87ddae8c0d19.gif"></p>
+<h2 id="the-challenge-3d-graphics-on-a-microcontroller">The Challenge: 3D Graphics on a Microcontroller</h2>
+<p>🤖 Disclaimer: AI has been involved in writing this article</p>
+<p>When I first laid eyes on Pimoroni&rsquo;s Cosmic Unicorn — a gorgeous 32×32 RGB LED matrix powered by a Raspberry Pi Pico W — I knew I had to push its limits. Sure, scrolling text and simple animations are fun, but what about real 3D graphics? What about ray tracing?</p>
+<p>The problem was obvious: ray tracing is computationally expensive, and the Pico W, while capable, isn&rsquo;t exactly a GPU powerhouse. But that&rsquo;s where the fun begins.</p>
+<h2 id="ray-marching">Ray Marching</h2>
+<p>Instead of traditional ray tracing with triangle meshes, I turned to <strong>ray marching</strong> with <strong>Signed Distance Fields (SDFs)</strong>. This technique, popularized by legends like Inigo Quilez and the demoscene community, uses mathematical functions to define 3D shapes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># A sphere is just a simple distance function!</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sdf_sphere</span>(center, radius):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sphere_sdf</span>(p):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> distance(center, p) <span style="color:#f92672">-</span> radius
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sphere_sdf
+</span></span></code></pre></div><p>The beauty of SDFs is that complex scenes can be built by combining simple mathematical primitives. Want organic, flowing shapes? Use smooth union operations:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">op_smooth_union</span>(d1, d2, k):
+</span></span><span style="display:flex;"><span>    h <span style="color:#f92672">=</span> clamp(<span style="color:#ae81ff">0.5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> (d2 <span style="color:#f92672">-</span> d1) <span style="color:#f92672">/</span> k, <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> mix(d2, d1, h) <span style="color:#f92672">-</span> k <span style="color:#f92672">*</span> h <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> h)
+</span></span></code></pre></div><p>This creates seamless blending between objects — perfect for that organic, fluid look.</p>
+<h2 id="the-two-script-solution">The Two-Script Solution</h2>
+<p>My first attempt was to run everything in real-time on the Pico. The results? A slideshow running at about 2 frames per second. Time for Plan B.</p>
+<h3 id="script-1-the-pc-powerhouse">Script 1: The PC Powerhouse</h3>
+<p>The first script (<code>render_pc.py</code>) runs on a desktop PC and does the heavy lifting:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">render_frame</span>(current_time):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Render a single frame and return brightness values (0-255)&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    frame_data <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    scene <span style="color:#f92672">=</span> create_scene(current_time)
+</span></span><span style="display:flex;"><span>    ray_marcher <span style="color:#f92672">=</span> ray_march(scene)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Ray march every pixel</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> range(HEIGHT):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(WIDTH):
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Create ray direction</span>
+</span></span><span style="display:flex;"><span>            u <span style="color:#f92672">=</span> (x <span style="color:#f92672">-</span> WIDTH<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.12</span>
+</span></span><span style="display:flex;"><span>            v <span style="color:#f92672">=</span> (y <span style="color:#f92672">-</span> HEIGHT<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.12</span>
+</span></span><span style="display:flex;"><span>            view_dir <span style="color:#f92672">=</span> normalize(Vec3(u, v, <span style="color:#ae81ff">1.0</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># March the ray and calculate lighting</span>
+</span></span><span style="display:flex;"><span>            dist <span style="color:#f92672">=</span> ray_marcher(camera_pos, view_dir)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> dist <span style="color:#f92672">&lt;</span> MAX_RAY_TRAVEL_DISTANCE:
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Hit! Calculate fancy lighting...</span>
+</span></span><span style="display:flex;"><span>                brightness <span style="color:#f92672">=</span> calculate_lighting(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>                pixel_value <span style="color:#f92672">=</span> int(brightness <span style="color:#f92672">*</span> <span style="color:#ae81ff">255</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                pixel_value <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>  <span style="color:#75715e"># Background</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            frame_data<span style="color:#f92672">.</span>append(pixel_value)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> frame_data
+</span></span></code></pre></div><p>This script pre-renders 60 frames of animation, each saved as a 1KB binary file containing brightness values for every pixel.</p>
+<h3 id="script-2-the-pico-player">Script 2: The Pico Player</h3>
+<p>The second script (<code>player_pico.py</code>) runs on the Pico and focuses purely on playback:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_frame</span>(frame_number):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Load pre-rendered frame and convert to colors&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;frame_</span><span style="color:#e6db74">{</span>frame_number<span style="color:#e6db74">:</span><span style="color:#e6db74">03d</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.dat&#34;</span>, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>        brightness_data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read(<span style="color:#ae81ff">1024</span>)  <span style="color:#75715e"># 32×32 pixels</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Convert brightness to colors using pre-computed lookup table</span>
+</span></span><span style="display:flex;"><span>    color_data <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> brightness <span style="color:#f92672">in</span> brightness_data:
+</span></span><span style="display:flex;"><span>        color_data<span style="color:#f92672">.</span>append(COLOR_LOOKUP[brightness])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> color_data
+</span></span></code></pre></div><p>The key optimization here is the <strong>pre-computed color lookup table</strong>. Instead of calculating gradients in real-time, I pre-calculate all 256 possible colors once at startup:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_color_lookup</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Pre-compute all gradient colors for instant lookup&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> COLOR_LOOKUP
+</span></span><span style="display:flex;"><span>    COLOR_LOOKUP <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    r1, g1, b1 <span style="color:#f92672">=</span> COLOR_1  <span style="color:#75715e"># Dark color</span>
+</span></span><span style="display:flex;"><span>    r2, g2, b2 <span style="color:#f92672">=</span> COLOR_2  <span style="color:#75715e"># Bright color</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> brightness <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">256</span>):
+</span></span><span style="display:flex;"><span>        ratio <span style="color:#f92672">=</span> brightness <span style="color:#f92672">/</span> <span style="color:#ae81ff">255.0</span>
+</span></span><span style="display:flex;"><span>        r <span style="color:#f92672">=</span> int(r1 <span style="color:#f92672">+</span> (r2 <span style="color:#f92672">-</span> r1) <span style="color:#f92672">*</span> ratio)
+</span></span><span style="display:flex;"><span>        g <span style="color:#f92672">=</span> int(g1 <span style="color:#f92672">+</span> (g2 <span style="color:#f92672">-</span> g1) <span style="color:#f92672">*</span> ratio)
+</span></span><span style="display:flex;"><span>        b <span style="color:#f92672">=</span> int(b1 <span style="color:#f92672">+</span> (b2 <span style="color:#f92672">-</span> b1) <span style="color:#f92672">*</span> ratio)
+</span></span><span style="display:flex;"><span>        COLOR_LOOKUP<span style="color:#f92672">.</span>append((r, g, b))
+</span></span></code></pre></div><h2 id="the-development-experience-preview-mode">The Development Experience: Preview Mode</h2>
+<p>One of my favorite features is the real-time preview mode. While developing, I can see exactly what the animation will look like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python render_pc.py --mode preview
+</span></span></code></pre></div><p>This opens a pygame window showing a scaled-up version of the 32×32 output, running at 30fps. I can pause with spacebar, quit with escape, and see live FPS counters. It made iteration incredibly fast — I could tweak lighting, add new spheres, or adjust animations and see results immediately.</p>
+<h2 id="the-scene-organic-chaos">The Scene: Organic Chaos</h2>
+<p>The final scene features multiple animated spheres with different movement patterns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_scene</span>(current_time):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scene_sdf</span>(p):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Main pulsing sphere</span>
+</span></span><span style="display:flex;"><span>        sphere1 <span style="color:#f92672">=</span> sdf_sphere(Vec3(<span style="color:#ae81ff">0</span>, math<span style="color:#f92672">.</span>sin(current_time<span style="color:#f92672">*</span>π) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">0</span>), <span style="color:#ae81ff">1.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Orbiting smaller spheres</span>
+</span></span><span style="display:flex;"><span>        sphere2 <span style="color:#f92672">=</span> sdf_sphere(Vec3(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, math<span style="color:#f92672">.</span>sin((current_time<span style="color:#f92672">-</span><span style="color:#ae81ff">1.2</span>)<span style="color:#f92672">*</span>π) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">0.75</span>)
+</span></span><span style="display:flex;"><span>        sphere3 <span style="color:#f92672">=</span> sdf_sphere(Vec3(<span style="color:#ae81ff">1</span>, math<span style="color:#f92672">.</span>sin((current_time<span style="color:#f92672">-</span><span style="color:#ae81ff">0.7</span>)<span style="color:#f92672">*-</span>π) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.2</span>, <span style="color:#ae81ff">0</span>), <span style="color:#ae81ff">1.2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Floating spheres with complex motion</span>
+</span></span><span style="display:flex;"><span>        sphere4 <span style="color:#f92672">=</span> sdf_sphere(Vec3(
+</span></span><span style="display:flex;"><span>            math<span style="color:#f92672">.</span>sin((current_time<span style="color:#f92672">-</span><span style="color:#ae81ff">0.7</span>)<span style="color:#f92672">*-</span>π) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.2</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">2.0</span>,
+</span></span><span style="display:flex;"><span>            math<span style="color:#f92672">.</span>sin(current_time<span style="color:#f92672">*</span>π) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.2</span>
+</span></span><span style="display:flex;"><span>        ), <span style="color:#ae81ff">0.6</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Ground plane</span>
+</span></span><span style="display:flex;"><span>        plane <span style="color:#f92672">=</span> sdf_plane(Vec3(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>), <span style="color:#ae81ff">0.8</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Smoothly blend everything together</span>
+</span></span><span style="display:flex;"><span>        combined <span style="color:#f92672">=</span> op_smooth_union(sphere1(p), plane(p), <span style="color:#ae81ff">1.2</span>)
+</span></span><span style="display:flex;"><span>        combined <span style="color:#f92672">=</span> op_smooth_union(sphere2(p), combined, <span style="color:#ae81ff">1.0</span>)
+</span></span><span style="display:flex;"><span>        combined <span style="color:#f92672">=</span> op_smooth_union(sphere3(p), combined, <span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>        combined <span style="color:#f92672">=</span> op_smooth_union(sphere4(p), combined, <span style="color:#ae81ff">1.7</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> combined
+</span></span></code></pre></div><p>The smooth union operations create organic, flowing connections between the spheres — they merge and separate like liquid mercury.</p>
+<h2 id="dual-light-sources">Dual Light Sources</h2>
+<p>To add visual interest, I implemented dual light sources with different characteristics:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Primary light - bright, sharp highlights</span>
+</span></span><span style="display:flex;"><span>light_pos_1 <span style="color:#f92672">=</span> Vec3(
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>cos(light_angle),
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">2.5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sin(light_angle)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Secondary light - dimmer, softer, counter-rotating</span>
+</span></span><span style="display:flex;"><span>light_pos_2 <span style="color:#f92672">=</span> Vec3(
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">1.5</span> <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>cos(light_angle_2),
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">0.5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">1.5</span> <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sin(light_angle_2)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Combine the lighting contributions</span>
+</span></span><span style="display:flex;"><span>total_diffuse <span style="color:#f92672">=</span> diffuse_1 <span style="color:#f92672">+</span> diffuse_2 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.6</span>
+</span></span><span style="display:flex;"><span>total_specular <span style="color:#f92672">=</span> specular_1 <span style="color:#f92672">+</span> specular_2 <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.4</span>
+</span></span></code></pre></div><p>The primary light creates the main illumination and sharp specular highlights, while the secondary light adds fill lighting and softer highlights. As they orbit at different speeds and heights, complex shadow patterns emerge.</p>
+<h2 id="color-magic-from-grayscale-to-rainbows">Color Magic: From Grayscale to Rainbows</h2>
+<p>Here&rsquo;s where it gets fun. The PC script outputs grayscale brightness values, but the Pico script interprets these as positions along a color gradient. Want to change the entire mood of the animation? Just edit two lines:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Cyberpunk vibes</span>
+</span></span><span style="display:flex;"><span>COLOR_1 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">128</span>)    <span style="color:#75715e"># Purple</span>
+</span></span><span style="display:flex;"><span>COLOR_2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">255</span>)    <span style="color:#75715e"># Cyan</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fire effect</span>
+</span></span><span style="display:flex;"><span>COLOR_1 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)        <span style="color:#75715e"># Black</span>
+</span></span><span style="display:flex;"><span>COLOR_2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">0</span>)    <span style="color:#75715e"># Orange</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ocean depths</span>
+</span></span><span style="display:flex;"><span>COLOR_1 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">100</span>)     <span style="color:#75715e"># Deep blue</span>
+</span></span><span style="display:flex;"><span>COLOR_2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">255</span>)  <span style="color:#75715e"># Light blue</span>
+</span></span></code></pre></div><p>The same ray-marched lighting data creates completely different moods with different color schemes.</p>
+<h2 id="the-upload-dance-getting-data-to-the-pico">The Upload Dance: Getting Data to the Pico</h2>
+<p>Transferring 60 files to a microcontroller isn&rsquo;t as simple as drag-and-drop. I settled on Thonny IDE&rsquo;s file manager:</p>
+<ol>
+<li>Generate frames: <code>python render_pc.py --mode render --frames 60</code></li>
+<li>Open Thonny&rsquo;s file panel</li>
+<li>Navigate to the <code>animation_frames/</code> folder</li>
+<li>Select all 60 <code>.dat</code> files</li>
+<li>Right-click → &ldquo;Upload to /&rdquo;</li>
+<li>Wait (and pray)</li>
+</ol>
+<p>Each frame is exactly 1024 bytes, so 60 frames = ~60KB total — easily fitting in the Pico&rsquo;s flash storage.</p>
+<h2 id="performance-smooth-as-silk">Performance: Smooth as Silk</h2>
+<p>The final result? Buttery smooth 30fps playback with complex 3D lighting effects. The pre-computed color lookup table was crucial — instead of doing floating-point math for every pixel, the Pico just does simple array lookups.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Before: Slow floating-point interpolation</span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> int(r1 <span style="color:#f92672">+</span> (r2 <span style="color:#f92672">-</span> r1) <span style="color:#f92672">*</span> (brightness <span style="color:#f92672">/</span> <span style="color:#ae81ff">255.0</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># After: Instant lookup</span>
+</span></span><span style="display:flex;"><span>r, g, b <span style="color:#f92672">=</span> COLOR_LOOKUP[brightness]
+</span></span></code></pre></div><p>This optimization alone made the difference between stuttery 10fps and smooth 30fps playback.</p>
+<h2 id="interactive-controls">Interactive Controls</h2>
+<p>The Cosmic Unicorn&rsquo;s built-in buttons provide live controls:</p>
+<ul>
+<li><strong>Brightness Up/Down</strong>: Adjust LED intensity</li>
+<li><strong>A/B/C/D buttons</strong>: Pause/resume animation</li>
+<li><strong>Automatic looping</strong>: Seamless 2-second cycles</li>
+</ul>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<h3 id="1-pre-computation-is-king">1. Pre-computation is King</h3>
+<p>When working with limited hardware, move as much computation as possible to the development phase. The Pico W is perfectly capable of smooth animation playback — it just can&rsquo;t render complex 3D scenes in real-time.</p>
+<h3 id="2-preview-mode-is-essential">2. Preview Mode is Essential</h3>
+<p>Being able to see changes immediately without going through the render → upload → test cycle made development 10x faster. The pygame preview window became my primary development tool.</p>
+<h3 id="3-mathematical-beauty">3. Mathematical Beauty</h3>
+<p>There&rsquo;s something deeply satisfying about defining complex, organic 3D shapes with simple mathematical functions. SDFs and ray marching feel like digital alchemy.</p>
+<h3 id="4-file-formats-matter">4. File Formats Matter</h3>
+<p>Simple binary files (just raw brightness bytes) were perfect for this use case. No parsing overhead, minimal storage, and fast loading.</p>
+<h2 id="the-final-result">The Final Result</h2>
+<p>The end result is mesmerizing: multiple organic shapes flow and merge in 3D space, illuminated by circling lights that cast complex, ever-changing shadows. The 32×32 resolution might seem limiting, but at viewing distance, the LED matrix creates surprisingly convincing 3D depth.</p>
+<p>Want to try it yourself? The complete project is available with detailed setup instructions for both the PC renderer and Pico player. Whether you&rsquo;re interested in ray marching, microcontroller graphics, or just want some mesmerizing desk art, this project pushes the boundaries of what&rsquo;s possible on a tiny LED matrix.</p>
+<h2 id="technical-specifications">Technical Specifications</h2>
+<ul>
+<li><strong>Resolution</strong>: 32×32 pixels (1024 total)</li>
+<li><strong>Frame Rate</strong>: 30fps playback</li>
+<li><strong>Animation Length</strong>: 60 frames (2-second seamless loop)</li>
+<li><strong>File Size</strong>: ~60KB total (1KB per frame)</li>
+<li><strong>Rendering Time</strong>: ~2 minutes for 60 frames on modern PC</li>
+<li><strong>Color Depth</strong>: 16.7M colors via RGB gradient mapping</li>
+</ul>
+<p>The marriage of modern ray marching techniques with retro LED matrix hardware creates something truly unique — complex 3D graphics that feel both futuristic and nostalgic.</p>
+<p><em>Happy ray marching! 🌟</em></p>
+<hr>
+<p><strong>Project Repository</strong>: Available with complete source code, documentation, and setup guides for recreating this ray marching renderer on your own Cosmic Unicorn.</p>
+<p>Check out: <a href="https://github.com/coded-aesthetics/cosmic-unicorn-raymarcher">https://github.com/coded-aesthetics/cosmic-unicorn-raymarcher</a></p>
+
+
+        
+          <div class="blog-tags">
+            
+              
+              <a href="http://localhost:1313/tags/ray-marching/">ray-marching</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/3d-graphics/">3d-graphics</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/raspberry-pi/">raspberry-pi</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/micropython/">micropython</a>&nbsp;
+            
+              
+              <a href="http://localhost:1313/tags/cosmic-unicorn/">cosmic-unicorn</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2025
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://localhost:1313/">coded-aesthetics</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.148.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="http://localhost:1313/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://localhost:1313/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

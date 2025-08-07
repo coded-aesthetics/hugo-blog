@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'coded-aesthetics'
+theme = 'beautifulhugo'
+[Params]
+subtitle = "make / mistake / learn / repeat"
+mainSections = ["post", "posts"]
+logo = "images/squid.png"
