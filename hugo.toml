@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://hugo-blog-eosin-omega.vercel.app/'
 languageCode = 'en-us'
 title = 'coded-aesthetics'
 theme = 'beautifulhugo'
