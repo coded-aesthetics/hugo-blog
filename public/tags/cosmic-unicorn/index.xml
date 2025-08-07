@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cosmic-Unicorn on coded-aesthetics</title>
-    <link>https://example.org/tags/cosmic-unicorn/</link>
+    <link>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</link>
     <description>Recent content in Cosmic-Unicorn on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Aug 2025 13:21:40 +0200</lastBuildDate>
-    <atom:link href="https://example.org/tags/cosmic-unicorn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/posts/ray-marching-cosmic-unicorn/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://example.org/posts/ray-marching-cosmic-unicorn/</guid>
-      <description>&lt;h1 id=&#34;building-a-real-time-ray-marching-renderer-for-the-cosmic-unicorn&#34;&gt;Building a Real-Time Ray Marching Renderer for the Cosmic Unicorn&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://example.org/images/ezgif-6a87ddae8c0d19.gif&#34; alt=&#34;/images/ezgif-6a87ddae8c0d19.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-challenge-3d-graphics-on-a-microcontroller&#34;&gt;The Challenge: 3D Graphics on a Microcontroller&lt;/h2&gt;&#xA;&lt;p&gt;🤖 Disclaimer: AI has been involved in writing this article&lt;/p&gt;&#xA;&lt;p&gt;When I first laid eyes on Pimoroni&amp;rsquo;s Cosmic Unicorn — a gorgeous 32×32 RGB LED matrix powered by a Raspberry Pi Pico W — I knew I had to push its limits. Sure, scrolling text and simple animations are fun, but what about real 3D graphics? What about ray tracing?&lt;/p&gt;</description>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</guid>
+      <description>&lt;h1 id=&#34;building-a-real-time-ray-marching-renderer-for-the-cosmic-unicorn&#34;&gt;Building a Real-Time Ray Marching Renderer for the Cosmic Unicorn&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hugo-blog-eosin-omega.vercel.app/images/ezgif-6a87ddae8c0d19.gif&#34; alt=&#34;/images/ezgif-6a87ddae8c0d19.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-challenge-3d-graphics-on-a-microcontroller&#34;&gt;The Challenge: 3D Graphics on a Microcontroller&lt;/h2&gt;&#xA;&lt;p&gt;🤖 Disclaimer: AI has been involved in writing this article&lt;/p&gt;&#xA;&lt;p&gt;When I first laid eyes on Pimoroni&amp;rsquo;s Cosmic Unicorn — a gorgeous 32×32 RGB LED matrix powered by a Raspberry Pi Pico W — I knew I had to push its limits. Sure, scrolling text and simple animations are fun, but what about real 3D graphics? What about ray tracing?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

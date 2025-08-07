@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/posts/ray-marching-cosmic-unicorn/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/3d-graphics/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/3d-graphics/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/cosmic-unicorn/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/hardware/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/hardware/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/micropython/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/micropython/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/posts/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/programming/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/programming/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/raspberry-pi/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/ray-marching/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/ray-marching/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url>
 </urlset>

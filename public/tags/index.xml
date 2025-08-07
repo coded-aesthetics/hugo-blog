@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on coded-aesthetics</title>
-    <link>https://example.org/tags/</link>
+    <link>https://hugo-blog-eosin-omega.vercel.app/tags/</link>
     <description>Recent content in Tags on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Aug 2025 13:21:40 +0200</lastBuildDate>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3d-Graphics</title>
-      <link>https://example.org/tags/3d-graphics/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/tags/3d-graphics/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://example.org/tags/3d-graphics/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/3d-graphics/</guid>
       <description></description>
     </item>
     <item>
       <title>Cosmic-Unicorn</title>
-      <link>https://example.org/tags/cosmic-unicorn/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://example.org/tags/cosmic-unicorn/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</guid>
       <description></description>
     </item>
     <item>
       <title>Micropython</title>
-      <link>https://example.org/tags/micropython/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/tags/micropython/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://example.org/tags/micropython/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/micropython/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry-Pi</title>
-      <link>https://example.org/tags/raspberry-pi/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://example.org/tags/raspberry-pi/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     <item>
       <title>Ray-Marching</title>
-      <link>https://example.org/tags/ray-marching/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/tags/ray-marching/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://example.org/tags/ray-marching/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/ray-marching/</guid>
       <description></description>
     </item>
   </channel>
