@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on coded-aesthetics</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://example.org/tags/</link>
     <description>Recent content in Tags on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Aug 2025 13:21:40 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3d-Graphics</title>
-      <link>http://localhost:1313/tags/3d-graphics/</link>
+      <link>https://example.org/tags/3d-graphics/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>http://localhost:1313/tags/3d-graphics/</guid>
+      <guid>https://example.org/tags/3d-graphics/</guid>
       <description></description>
     </item>
     <item>
       <title>Cosmic-Unicorn</title>
-      <link>http://localhost:1313/tags/cosmic-unicorn/</link>
+      <link>https://example.org/tags/cosmic-unicorn/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>http://localhost:1313/tags/cosmic-unicorn/</guid>
+      <guid>https://example.org/tags/cosmic-unicorn/</guid>
       <description></description>
     </item>
     <item>
       <title>Micropython</title>
-      <link>http://localhost:1313/tags/micropython/</link>
+      <link>https://example.org/tags/micropython/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>http://localhost:1313/tags/micropython/</guid>
+      <guid>https://example.org/tags/micropython/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry-Pi</title>
-      <link>http://localhost:1313/tags/raspberry-pi/</link>
+      <link>https://example.org/tags/raspberry-pi/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
+      <guid>https://example.org/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     <item>
       <title>Ray-Marching</title>
-      <link>http://localhost:1313/tags/ray-marching/</link>
+      <link>https://example.org/tags/ray-marching/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>http://localhost:1313/tags/ray-marching/</guid>
+      <guid>https://example.org/tags/ray-marching/</guid>
       <description></description>
     </item>
   </channel>

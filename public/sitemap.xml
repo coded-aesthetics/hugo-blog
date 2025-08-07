@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/ray-marching-cosmic-unicorn/</loc>
+    <loc>https://example.org/posts/ray-marching-cosmic-unicorn/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/3d-graphics/</loc>
+    <loc>https://example.org/tags/3d-graphics/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cosmic-unicorn/</loc>
+    <loc>https://example.org/tags/cosmic-unicorn/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/hardware/</loc>
+    <loc>https://example.org/categories/hardware/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/micropython/</loc>
+    <loc>https://example.org/tags/micropython/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://example.org/posts/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://example.org/categories/programming/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/raspberry-pi/</loc>
+    <loc>https://example.org/tags/raspberry-pi/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ray-marching/</loc>
+    <loc>https://example.org/tags/ray-marching/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url>
 </urlset>
