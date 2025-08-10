@@ -182,7 +182,6 @@ Traditional BLE programming involves complex connection management, device disco
 
 - **Automatic Connection Management** - Handles reconnections when devices disconnect
 - **Device-Specific APIs** - Pre-built support for Timeular protocol
-- **Cross-Platform** - Works on Windows, macOS, and Linux
 - **Robust Error Handling** - Graceful handling of Bluetooth stack issues
 
 ## The Go Bridge Application
