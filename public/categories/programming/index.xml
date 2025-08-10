@@ -17,6 +17,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicor-with-timeular/</link>
+      <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicor-with-timeular/</guid>
+      <description>&lt;h1 id=&#34;using-timeular-tracker-to-display-dice-rolls-on-the-cosmic-unicorn&#34;&gt;Using Timeular Tracker to display dice rolls on the Cosmic Unicorn&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hugo-blog-eosin-omega.vercel.app/images/timeular.gif&#34; alt=&#34;/images/timeular.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever wanted to create a physical display that responds to real-world interactions? In this tutorial, we&amp;rsquo;ll build a fascinating IoT project that combines Bluetooth Low Energy (BLE), WiFi, and LED matrix displays to create a responsive system where rotating a physical device instantly updates a display. You need a timeular tracker and a cosmic unicorn 32x32 matrix to actually be able to build this. But even if you do not own any of these components you can still learn how to setup a web server on a Raspberry PI Pico w and how to use the bartolome-ble-toolkit to connect to bluetooth periphals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
       <guid>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</guid>
