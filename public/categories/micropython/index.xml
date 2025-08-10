@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cosmic-Unicorn on coded-aesthetics</title>
-    <link>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</link>
-    <description>Recent content in Cosmic-Unicorn on coded-aesthetics</description>
+    <title>MicroPython on coded-aesthetics</title>
+    <link>https://hugo-blog-eosin-omega.vercel.app/categories/micropython/</link>
+    <description>Recent content in MicroPython on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Aug 2025 10:01:40 +0200</lastBuildDate>
-    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/categories/micropython/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Timeular Tracker to display dice rolls on the Cosmic Unicorn</title>
       <link>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicorn-with-timeular/</link>
       <pubDate>Sun, 10 Aug 2025 10:01:40 +0200</pubDate>
       <guid>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicorn-with-timeular/</guid>
       <description>&lt;h1 id=&#34;using-timeular-tracker-to-display-dice-rolls-on-the-cosmic-unicorn&#34;&gt;Using Timeular Tracker to display dice rolls on the Cosmic Unicorn&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hugo-blog-eosin-omega.vercel.app/images/timeular.gif&#34; alt=&#34;/images/timeular.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever wanted to create a physical display that responds to real-world interactions? In this tutorial, we&amp;rsquo;ll build a fascinating IoT project that combines Bluetooth Low Energy (BLE), WiFi, and LED matrix displays to create a responsive system where rotating a physical device instantly updates a display. You need a timeular tracker and a cosmic unicorn 32x32 matrix to actually be able to build this. But even if you do not own any of these components you can still learn how to setup a web server on a Raspberry PI Pico w and how to use the bartolome-ble-toolkit to connect to bluetooth periphals.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</link>
-      <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</guid>
-      <description>&lt;h1 id=&#34;building-a-real-time-ray-marching-renderer-for-the-cosmic-unicorn&#34;&gt;Building a Real-Time Ray Marching Renderer for the Cosmic Unicorn&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hugo-blog-eosin-omega.vercel.app/images/ezgif-6a87ddae8c0d19.gif&#34; alt=&#34;/images/ezgif-6a87ddae8c0d19.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-challenge-3d-graphics-on-a-microcontroller&#34;&gt;The Challenge: 3D Graphics on a Microcontroller&lt;/h2&gt;&#xA;&lt;p&gt;🤖 Disclaimer: AI has been involved in writing this article&lt;/p&gt;&#xA;&lt;p&gt;When I first laid eyes on Pimoroni&amp;rsquo;s Cosmic Unicorn — a gorgeous 32×32 RGB LED matrix powered by a Raspberry Pi Pico W — I knew I had to push its limits. Sure, scrolling text and simple animations are fun, but what about real 3D graphics? What about ray tracing?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

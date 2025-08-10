@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Using Timeular Tracker to display dice rolls on the Cosmic Unicorn - </title>
+
+  <meta name="description" content="Roll the dice, light up the unicorn"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "coded-aesthetics",
+    
+    "url": "https:\/\/hugo-blog-eosin-omega.vercel.app\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/hugo-blog-eosin-omega.vercel.app\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/hugo-blog-eosin-omega.vercel.app\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/hugo-blog-eosin-omega.vercel.app\/posts\/control-cosmic-unicorn-with-timeular\/",
+          "name": "Using timeular tracker to display dice rolls on the cosmic unicorn"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Jan"
+  },
+  "headline": "Using Timeular Tracker to display dice rolls on the Cosmic Unicorn",
+  "description" : "Roll the dice, light up the unicorn",
+  "inLanguage" : "en",
+  "wordCount":  1452 ,
+  "datePublished" : "2025-08-10T10:01:40\u002b02:00",
+  "dateModified" : "2025-08-10T10:01:40\u002b02:00",
+  "image" : "https:\/\/hugo-blog-eosin-omega.vercel.app\/images\/squid.png",
+  "keywords" : [ "ble, bluetooth, timeular, go, cosmic-unicorn, raspberry pi pico w, web server" ],
+  "mainEntityOfPage" : "https:\/\/hugo-blog-eosin-omega.vercel.app\/posts\/control-cosmic-unicorn-with-timeular\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/hugo-blog-eosin-omega.vercel.app\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/hugo-blog-eosin-omega.vercel.app\/images\/squid.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Using Timeular Tracker to display dice rolls on the Cosmic Unicorn" />
+<meta property="og:description" content="Roll the dice, light up the unicorn">
+<meta property="og:image" content="https://hugo-blog-eosin-omega.vercel.app/images/squid.png" />
+<meta property="og:url" content="https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicorn-with-timeular/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="coded-aesthetics" />
+
+  <meta name="twitter:title" content="Using Timeular Tracker to display dice rolls on the Cosmic Unicorn" />
+  <meta name="twitter:description" content="Roll the dice, light up the unicorn">
+  <meta name="twitter:image" content="https://hugo-blog-eosin-omega.vercel.app/images/squid.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.148.2">
+  <link rel="alternate" href="https://hugo-blog-eosin-omega.vercel.app/index.xml" type="application/rss+xml" title="coded-aesthetics"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://hugo-blog-eosin-omega.vercel.app/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://hugo-blog-eosin-omega.vercel.app/css/syntax.css" /><link rel="stylesheet" href="https://hugo-blog-eosin-omega.vercel.app/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://hugo-blog-eosin-omega.vercel.app/">coded-aesthetics</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="coded-aesthetics" href="https://hugo-blog-eosin-omega.vercel.app/">
+            <img class="avatar-img" src="https://hugo-blog-eosin-omega.vercel.app/images/squid.png" alt="coded-aesthetics" />
+           
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Using Timeular Tracker to display dice rolls on the Cosmic Unicorn</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="using-timeular-tracker-to-display-dice-rolls-on-the-cosmic-unicorn">Using Timeular Tracker to display dice rolls on the Cosmic Unicorn</h1>
+<hr>
+<p><img src="/images/timeular.gif" alt="/images/timeular.gif"></p>
+<p>Have you ever wanted to create a physical display that responds to real-world interactions? In this tutorial, we&rsquo;ll build a fascinating IoT project that combines Bluetooth Low Energy (BLE), WiFi, and LED matrix displays to create a responsive system where rotating a physical device instantly updates a display. You need a timeular tracker and a cosmic unicorn 32x32 matrix to actually be able to build this. But even if you do not own any of these components you can still learn how to setup a web server on a Raspberry PI Pico w and how to use the bartolome-ble-toolkit to connect to bluetooth periphals.</p>
+<h2 id="what-were-building">What We&rsquo;re Building</h2>
+<p>Our project creates a seamless connection between three components:</p>
+<ol>
+<li><strong>Timeular Tracker</strong> - A physical octagonal device that detects which side is facing up</li>
+<li><strong>Go Application</strong> - A desktop/server application that reads the tracker via BLE using the Bartolome BLE Toolkit</li>
+<li><strong>Raspberry Pi Pico W</strong> - A microcontroller running a web server that controls the LED display</li>
+<li><strong>Cosmic Unicorn 32x32 LED Matrix</strong> - A vibrant display that shows large digits</li>
+</ol>
+<p>When you rotate the Timeular tracker to show side 5, the number &ldquo;5&rdquo; instantly appears on the LED matrix. It&rsquo;s like having a physical remote control for your display!</p>
+<h2 id="where-is-the-code">Where is the code?</h2>
+<p>Here: <a href="https://github.com/coded-aesthetics/timeular-cosmic-unicorn">https://github.com/coded-aesthetics/timeular-cosmic-unicorn</a></p>
+<h2 id="the-architecture">The Architecture</h2>
+<pre tabindex="0"><code>[Timeular Tracker] --BLE--&gt; [Go App] --HTTP--&gt; [Pico W Server] --GPIO--&gt; [LED Matrix]
+     (Physical)          (Computer)         (WiFi/Web)           (Display)
+</code></pre><p>The data flow is beautifully simple:</p>
+<ol>
+<li>Timeular tracker broadcasts its current side via BLE</li>
+<li>Go application captures this data using Bluetooth</li>
+<li>Go app immediately sends HTTP GET request to Pico W</li>
+<li>Pico W receives the request and displays the digit on the LED matrix</li>
+</ol>
+<h2 id="hardware-requirements">Hardware Requirements</h2>
+<ul>
+<li><strong>Timeular Tracker</strong> - The octagonal time-tracking device</li>
+<li><strong>Raspberry Pi Pico W</strong> - Microcontroller with WiFi capability</li>
+<li><strong>Pimoroni Cosmic Unicorn</strong> - 32x32 RGB LED matrix display</li>
+<li><strong>Computer with Bluetooth</strong> - To run the Go application (Windows, macOS, or Linux)</li>
+</ul>
+<h2 id="setting-up-the-cosmic-unicorn-led-display">Setting Up the Cosmic Unicorn LED Display</h2>
+<p>First, let&rsquo;s set up our LED matrix display server on the Pico W. This creates a web server that accepts HTTP requests to display digits.</p>
+<h3 id="installing-micropython-on-pico-w">Installing MicroPython on Pico W</h3>
+<ol>
+<li>Download the latest MicroPython UF2 file for Pico W from <a href="https://micropython.org/download/rp2-pico-w/">micropython.org</a></li>
+<li>Hold the BOOTSEL button while connecting your Pico W via USB</li>
+<li>Copy the UF2 file to the RPI-RP2 drive that appears</li>
+<li>Install the Pimoroni MicroPython libraries for Cosmic Unicorn</li>
+</ol>
+<h3 id="the-led-display-server-code">The LED Display Server Code</h3>
+<p>The Pico W runs a complete web server that can display any digit (0-9) in large, readable format across the entire 32x32 matrix:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> cosmic <span style="color:#f92672">import</span> CosmicUnicorn
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> picographics <span style="color:#f92672">import</span> PicoGraphics, DISPLAY_COSMIC_UNICORN
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> network
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> socket
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize the display</span>
+</span></span><span style="display:flex;"><span>cu <span style="color:#f92672">=</span> CosmicUnicorn()
+</span></span><span style="display:flex;"><span>graphics <span style="color:#f92672">=</span> PicoGraphics(display<span style="color:#f92672">=</span>DISPLAY_COSMIC_UNICORN)
+</span></span><span style="display:flex;"><span>cu<span style="color:#f92672">.</span>set_brightness(<span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define colors</span>
+</span></span><span style="display:flex;"><span>WHITE <span style="color:#f92672">=</span> graphics<span style="color:#f92672">.</span>create_pen(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">255</span>)
+</span></span><span style="display:flex;"><span>RED <span style="color:#f92672">=</span> graphics<span style="color:#f92672">.</span>create_pen(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>GREEN <span style="color:#f92672">=</span> graphics<span style="color:#f92672">.</span>create_pen(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>BLACK <span style="color:#f92672">=</span> graphics<span style="color:#f92672">.</span>create_pen(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw_thick_digit</span>(digit, color<span style="color:#f92672">=</span>WHITE, thickness<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Draw a large digit filling most of the 32x32 display&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    graphics<span style="color:#f92672">.</span>set_pen(BLACK)
+</span></span><span style="display:flex;"><span>    graphics<span style="color:#f92672">.</span>clear()
+</span></span><span style="display:flex;"><span>    graphics<span style="color:#f92672">.</span>set_pen(color)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Coordinates for well-proportioned digits</span>
+</span></span><span style="display:flex;"><span>    left, right <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">26</span>
+</span></span><span style="display:flex;"><span>    top, bottom <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>    middle <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>    width <span style="color:#f92672">=</span> right <span style="color:#f92672">-</span> left
+</span></span><span style="display:flex;"><span>    height <span style="color:#f92672">=</span> bottom <span style="color:#f92672">-</span> top
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Draw different digit patterns</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span> <span style="color:#f92672">-</span> thickness <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(x, top, thickness, height)
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(x <span style="color:#f92672">-</span> <span style="color:#ae81ff">3</span>, top <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, thickness)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(left, top, width, thickness)
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(right <span style="color:#f92672">-</span> thickness, top, thickness, middle <span style="color:#f92672">-</span> top)
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(left, middle <span style="color:#f92672">-</span> thickness<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>, width, thickness)
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(left, middle, thickness, bottom <span style="color:#f92672">-</span> middle)
+</span></span><span style="display:flex;"><span>        graphics<span style="color:#f92672">.</span>rectangle(left, bottom <span style="color:#f92672">-</span> thickness, width, thickness)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ... (additional digit patterns)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cu<span style="color:#f92672">.</span>update(graphics)
+</span></span></code></pre></div><h3 id="web-server-with-query-parameter-handling">Web Server with Query Parameter Handling</h3>
+<p>The server accepts HTTP requests with parameters to control what&rsquo;s displayed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">web_server</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Connect to WiFi</span>
+</span></span><span style="display:flex;"><span>    wlan <span style="color:#f92672">=</span> network<span style="color:#f92672">.</span>WLAN(network<span style="color:#f92672">.</span>STA_IF)
+</span></span><span style="display:flex;"><span>    wlan<span style="color:#f92672">.</span>active(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    wlan<span style="color:#f92672">.</span>connect(<span style="color:#e6db74">&#39;YOUR_WIFI_NAME&#39;</span>, <span style="color:#e6db74">&#39;YOUR_PASSWORD&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> wlan<span style="color:#f92672">.</span>isconnected():
+</span></span><span style="display:flex;"><span>        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ip <span style="color:#f92672">=</span> wlan<span style="color:#f92672">.</span>ifconfig()[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Server running on http://</span><span style="color:#e6db74">{</span>ip<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create web server</span>
+</span></span><span style="display:flex;"><span>    addr <span style="color:#f92672">=</span> socket<span style="color:#f92672">.</span>getaddrinfo(<span style="color:#e6db74">&#39;0.0.0.0&#39;</span>, <span style="color:#ae81ff">80</span>)[<span style="color:#ae81ff">0</span>][<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> socket<span style="color:#f92672">.</span>socket()
+</span></span><span style="display:flex;"><span>    s<span style="color:#f92672">.</span>bind(addr)
+</span></span><span style="display:flex;"><span>    s<span style="color:#f92672">.</span>listen(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            cl, addr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>accept()
+</span></span><span style="display:flex;"><span>            request <span style="color:#f92672">=</span> cl<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">1024</span>)<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-8&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Parse query parameters</span>
+</span></span><span style="display:flex;"><span>            params <span style="color:#f92672">=</span> parse_query_params(request)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;num&#39;</span> <span style="color:#f92672">in</span> params:
+</span></span><span style="display:flex;"><span>                digit <span style="color:#f92672">=</span> int(params[<span style="color:#e6db74">&#39;num&#39;</span>])
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;=</span> digit <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">9</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># Choose color based on parameter</span>
+</span></span><span style="display:flex;"><span>                    color <span style="color:#f92672">=</span> WHITE
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;color&#39;</span> <span style="color:#f92672">in</span> params:
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">if</span> params[<span style="color:#e6db74">&#39;color&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;red&#39;</span>:
+</span></span><span style="display:flex;"><span>                            color <span style="color:#f92672">=</span> RED
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">elif</span> params[<span style="color:#e6db74">&#39;color&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;green&#39;</span>:
+</span></span><span style="display:flex;"><span>                            color <span style="color:#f92672">=</span> GREEN
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    draw_thick_digit(digit, color, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Send response</span>
+</span></span><span style="display:flex;"><span>            cl<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;HTTP/1.1 200 OK</span><span style="color:#ae81ff">\r\n\r\n</span><span style="color:#e6db74">OK&#39;</span>)
+</span></span><span style="display:flex;"><span>            cl<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            cl<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Error: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span></code></pre></div><p>The server responds to URLs like:</p>
+<ul>
+<li><code>http://192.168.1.100/?num=5</code> - Display white &ldquo;5&rdquo;</li>
+<li><code>http://192.168.1.100/?num=3&amp;color=red</code> - Display red &ldquo;3&rdquo;</li>
+</ul>
+<h2 id="setting-up-the-bartolome-ble-toolkit">Setting Up the Bartolome BLE Toolkit</h2>
+<p>The Bartolome BLE Toolkit provides a clean, Go-based interface for working with Bluetooth Low Energy devices, specifically designed for Timeular trackers.</p>
+<h3 id="installing-the-toolkit">Installing the Toolkit</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go mod init timeular-display
+</span></span><span style="display:flex;"><span>go get github.com/coded-aesthetics/bartolome-ble-toolkit
+</span></span></code></pre></div><h3 id="why-bartolome-ble-toolkit">Why Bartolome BLE Toolkit?</h3>
+<p>Traditional BLE programming involves complex connection management, device discovery, and protocol handling. Bartolome abstracts all this complexity:</p>
+<ul>
+<li><strong>Automatic Connection Management</strong> - Handles reconnections when devices disconnect</li>
+<li><strong>Device-Specific APIs</strong> - Pre-built support for Timeular protocol</li>
+<li><strong>Robust Error Handling</strong> - Graceful handling of Bluetooth stack issues</li>
+</ul>
+<h2 id="the-go-bridge-application">The Go Bridge Application</h2>
+<p>Our Go application serves as the intelligent bridge between the BLE world and the HTTP world:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;net/http&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;github.com/coded-aesthetics/bartolome-ble-toolkit/pkg/ble&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;github.com/coded-aesthetics/bartolome-ble-toolkit/pkg/timeular&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Create Timeular device with custom polling</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeularDevice</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">timeular</span>.<span style="color:#a6e22e">NewDeviceWithConfig</span>(<span style="color:#a6e22e">timeular</span>.<span style="color:#a6e22e">Config</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Name</span>:         <span style="color:#e6db74">&#34;Timeular Tra&#34;</span>, <span style="color:#75715e">// Your device name</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">PollInterval</span>: <span style="color:#ae81ff">500</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Millisecond</span>,
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Create BLE manager</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">manager</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ble</span>.<span style="color:#a6e22e">NewManager</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Handle side changes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">OnSideChange</span>(<span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">deviceName</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">side</span> <span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Validate the detected side</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">timeular</span>.<span style="color:#a6e22e">IsValidSide</span>(<span style="color:#a6e22e">side</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;⚠️  Invalid side: %d\n&#34;</span>, <span style="color:#a6e22e">side</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;invalid side: %d&#34;</span>, <span style="color:#a6e22e">side</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Send HTTP request to Pico W</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">picoURL</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;http://192.168.0.185/?num=%d&#34;</span>, <span style="color:#a6e22e">side</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">response</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">picoURL</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;❌ Error updating display: %v\n&#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">Body</span>.<span style="color:#a6e22e">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;🎲 Side %d -&gt; LED Display updated\n&#34;</span>, <span style="color:#a6e22e">side</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Handle disconnections gracefully</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">manager</span>.<span style="color:#a6e22e">SetDisconnectHandler</span>(<span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">deviceName</span>, <span style="color:#a6e22e">address</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;⚠️  Device disconnected: %v\n&#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;🔄 Attempting to reconnect...&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">Reset</span>()
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Configure and connect</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">deviceConfig</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ble</span>.<span style="color:#a6e22e">DeviceConfig</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Name</span>:               <span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">GetName</span>(),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ServiceUUID</span>:        <span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">GetServiceUUID</span>(),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">CharacteristicUUID</span>: <span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">GetCharacteristicUUID</span>(),
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">NotificationHandler</span>: <span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">ProcessNotification</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">manager</span>.<span style="color:#a6e22e">ConnectDevices</span>([]<span style="color:#a6e22e">ble</span>.<span style="color:#a6e22e">DeviceConfig</span>{<span style="color:#a6e22e">deviceConfig</span>}); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalf</span>(<span style="color:#e6db74">&#34;❌ Connection failed: %v&#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;✅ Connected! Rotate your Timeular to see changes on the LED display&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Keep running until interrupted</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">select</span> {}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="the-magic-in-action">The Magic in Action</h2>
+<p>Here&rsquo;s what happens when you rotate your Timeular tracker:</p>
+<ol>
+<li><strong>Physical Rotation</strong> - You flip the Timeular from side 3 to side 7</li>
+<li><strong>BLE Detection</strong> - The tracker&rsquo;s internal accelerometer detects the new orientation</li>
+<li><strong>Bluetooth Broadcast</strong> - Timeular sends BLE notification with new side data</li>
+<li><strong>Go Processing</strong> - Bartolome toolkit receives and validates the side change</li>
+<li><strong>HTTP Request</strong> - Go app sends <code>GET http://192.168.0.185/?num=7</code></li>
+<li><strong>Display Update</strong> - Pico W parses the request and draws large &ldquo;7&rdquo; on LED matrix</li>
+<li><strong>Visual Feedback</strong> - Bright, colorful &ldquo;7&rdquo; appears instantly on the 32x32 display</li>
+</ol>
+<p>The entire process happens in under 100 milliseconds, creating a satisfying, real-time connection between physical and digital worlds.</p>
+<h2 id="advanced-features-and-customization">Advanced Features and Customization</h2>
+<h3 id="color-coded-sides">Color-Coded Sides</h3>
+<p>You can add color coding to make different sides more meaningful:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">OnSideChange</span>(<span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">deviceName</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">side</span> <span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">color</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">side</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">color</span> = <span style="color:#e6db74">&#34;green&#34;</span>  <span style="color:#75715e">// Work tasks</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">color</span> = <span style="color:#e6db74">&#34;red&#34;</span>    <span style="color:#75715e">// Break time</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">color</span> = <span style="color:#e6db74">&#34;white&#34;</span>  <span style="color:#75715e">// Other activities</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;http://192.168.0.185/?num=%d&amp;color=%s&#34;</span>, <span style="color:#a6e22e">side</span>, <span style="color:#a6e22e">color</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ... send request</span>
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h3 id="multiple-display-support">Multiple Display Support</h3>
+<p>The architecture easily scales to control multiple displays:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">displays</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;http://192.168.0.185&#34;</span>, <span style="color:#75715e">// Kitchen display</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;http://192.168.0.186&#34;</span>, <span style="color:#75715e">// Office display</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;http://192.168.0.187&#34;</span>, <span style="color:#75715e">// Living room display</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">display</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">displays</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%s/?num=%d&#34;</span>, <span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">side</span>))
+</span></span><span style="display:flex;"><span>    }(<span style="color:#a6e22e">display</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="time-based-automation">Time-Based Automation</h3>
+<p>Add scheduling logic to your bridge application:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">timeularDevice</span>.<span style="color:#a6e22e">OnSideChange</span>(<span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">deviceName</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">side</span> <span style="color:#66d9ef">byte</span>) <span style="color:#66d9ef">error</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">now</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Only update display during work hours</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">Hour</span>() <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">9</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">Hour</span>() <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">17</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Update display</span>
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Maybe dim the display or show a clock</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#e6db74">&#34;http://192.168.0.185/?mode=clock&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h2 id="troubleshooting-common-issues">Troubleshooting Common Issues</h2>
+<h3 id="bluetooth-connection-problems">Bluetooth Connection Problems</h3>
+<ul>
+<li><strong>Permission Issues</strong>: Ensure your Go application has Bluetooth permissions</li>
+<li><strong>Device Discovery</strong>: Make sure the Timeular is powered on and not connected to other apps</li>
+<li><strong>Range Issues</strong>: Keep the Timeular within 10 meters of your computer</li>
+</ul>
+<h3 id="wifi-and-http-issues">WiFi and HTTP Issues</h3>
+<ul>
+<li><strong>Network Connectivity</strong>: Verify Pico W and computer are on the same network</li>
+<li><strong>Firewall</strong>: Check that port 80 is accessible on the Pico W</li>
+<li><strong>IP Address Changes</strong>: Consider using mDNS or static IP for the Pico W</li>
+</ul>
+<h3 id="display-problems">Display Problems</h3>
+<ul>
+<li><strong>Power Supply</strong>: Ensure adequate power for the LED matrix</li>
+<li><strong>Library Issues</strong>: Verify Pimoroni libraries are correctly installed</li>
+<li><strong>Memory</strong>: Monitor Pico W memory usage with complex displays</li>
+</ul>
+<h2 id="extending-the-project">Extending the Project</h2>
+<p>This foundation opens up countless possibilities:</p>
+<h3 id="integration-with-productivity-tools">Integration with Productivity Tools</h3>
+<p>Connect your Timeular sides to:</p>
+<ul>
+<li><strong>Toggl/Harvest</strong> - Automatic time tracking</li>
+<li><strong>Slack Status</strong> - Update your status based on current activity</li>
+<li><strong>Philips Hue</strong> - Change room lighting based on activity type</li>
+</ul>
+
+
+        
+          <div class="blog-tags">
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/ble/">ble</a>&nbsp;
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/bluetooth/">bluetooth</a>&nbsp;
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/timeular/">timeular</a>&nbsp;
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/go/">go</a>&nbsp;
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/">cosmic-unicorn</a>&nbsp;
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi-pico-w/">raspberry pi pico w</a>&nbsp;
+            
+              
+              <a href="https://hugo-blog-eosin-omega.vercel.app/tags/web-server/">web server</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://hugo-blog-eosin-omega.vercel.app/posts/bartolome-ble-toolkit/" data-toggle="tooltip" data-placement="top" title="">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2025
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://hugo-blog-eosin-omega.vercel.app/">coded-aesthetics</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.148.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://hugo-blog-eosin-omega.vercel.app/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://hugo-blog-eosin-omega.vercel.app/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
