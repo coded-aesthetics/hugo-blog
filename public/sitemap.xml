@@ -2,73 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/posts/bartolome-ble-toolkit/</loc>
+    <loc>http://localhost:1313/tags/ble/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/ble/</loc>
+    <loc>http://localhost:1313/tags/bluetooth/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/bluetooth/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/</loc>
+    <loc>http://localhost:1313/tags/columbus-globes/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/columbus-globes/</loc>
+    <loc>http://localhost:1313/categories/go/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/go/</loc>
+    <loc>http://localhost:1313/tags/go/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/go/</loc>
+    <loc>http://localhost:1313/posts/bartolome-ble-toolkit/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/programming/</loc>
+    <loc>http://localhost:1313/categories/programming/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/timeular/</loc>
+    <loc>http://localhost:1313/tags/timeular/</loc>
     <lastmod>2025-08-10T11:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</loc>
+    <loc>http://localhost:1313/tags/cosmic-unicorn/</loc>
     <lastmod>2025-08-10T10:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/micropython/</loc>
+    <loc>http://localhost:1313/categories/micropython/</loc>
     <lastmod>2025-08-10T10:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi-pico-w/</loc>
+    <loc>http://localhost:1313/tags/raspberry-pi-pico-w/</loc>
     <lastmod>2025-08-10T10:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicorn-with-timeular/</loc>
+    <loc>http://localhost:1313/posts/control-cosmic-unicorn-with-timeular/</loc>
     <lastmod>2025-08-10T10:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/web-server/</loc>
+    <loc>http://localhost:1313/tags/web-server/</loc>
     <lastmod>2025-08-10T10:01:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</loc>
+    <loc>http://localhost:1313/tags/3d-graphics/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/3d-graphics/</loc>
+    <loc>http://localhost:1313/posts/ray-marching-cosmic-unicorn/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/categories/hardware/</loc>
+    <loc>http://localhost:1313/categories/hardware/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/micropython/</loc>
+    <loc>http://localhost:1313/tags/micropython/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi/</loc>
+    <loc>http://localhost:1313/tags/raspberry-pi/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url><url>
-    <loc>https://hugo-blog-eosin-omega.vercel.app/tags/ray-marching/</loc>
+    <loc>http://localhost:1313/tags/ray-marching/</loc>
     <lastmod>2025-08-07T13:21:40+02:00</lastmod>
   </url>
 </urlset>

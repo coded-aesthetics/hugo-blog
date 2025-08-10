@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ble on coded-aesthetics</title>
-    <link>https://hugo-blog-eosin-omega.vercel.app/tags/ble/</link>
+    <link>http://localhost:1313/tags/ble/</link>
     <description>Recent content in Ble on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Aug 2025 11:01:40 +0200</lastBuildDate>
-    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/tags/ble/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ble/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/posts/bartolome-ble-toolkit/</link>
+      <title>Introducing Bartolome BLE Toolkit: A Go Library for Bluetooth Low Energy Devices featuring support for Columbus Video Pens and Timeular Trackers</title>
+      <link>http://localhost:1313/posts/bartolome-ble-toolkit/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/posts/bartolome-ble-toolkit/</guid>
-      <description>&lt;h1 id=&#34;introducing-bartolome-ble-toolkit-a-go-library-for-bluetooth-low-energy-devices-featuring-support-for-columbus-video-pens-and-timeular-trackers&#34;&gt;Introducing Bartolome BLE Toolkit: A Go Library for Bluetooth Low Energy Devices featuring support for Columbus Video Pens and Timeular Trackers&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Working with Bluetooth Low Energy (BLE) devices can be challenging, especially when you need to manage multiple devices simultaneously with robust connection handling. That&amp;rsquo;s why I created the &lt;strong&gt;Bartolome BLE Toolkit&lt;/strong&gt; – a modular Go library. I used it to hack into the Columbus Video Pens and Timeular activity trackers, so their signal can be used to build your own applications. The library comes with extensible support for any BLE device.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/bartolome-ble-toolkit/</guid>
+      <description>&lt;p&gt;Working with Bluetooth Low Energy (BLE) devices can be challenging, especially when you need to manage multiple devices simultaneously with robust connection handling. That&amp;rsquo;s why I created the &lt;strong&gt;Bartolome BLE Toolkit&lt;/strong&gt; – a modular Go library. I used it to hack into the Columbus Video Pens and Timeular activity trackers, so their signal can be used to build your own applications. The library comes with extensible support for any BLE device.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Timeular Tracker to display dice rolls on the Cosmic Unicorn</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicorn-with-timeular/</link>
+      <link>http://localhost:1313/posts/control-cosmic-unicorn-with-timeular/</link>
       <pubDate>Sun, 10 Aug 2025 10:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/posts/control-cosmic-unicorn-with-timeular/</guid>
-      <description>&lt;h1 id=&#34;using-timeular-tracker-to-display-dice-rolls-on-the-cosmic-unicorn&#34;&gt;Using Timeular Tracker to display dice rolls on the Cosmic Unicorn&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hugo-blog-eosin-omega.vercel.app/images/timeular.gif&#34; alt=&#34;/images/timeular.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever wanted to create a physical display that responds to real-world interactions? In this tutorial, we&amp;rsquo;ll build a fascinating IoT project that combines Bluetooth Low Energy (BLE), WiFi, and LED matrix displays to create a responsive system where rotating a physical device instantly updates a display. You need a timeular tracker and a cosmic unicorn 32x32 matrix to actually be able to build this. But even if you do not own any of these components you can still learn how to setup a web server on a Raspberry PI Pico w and how to use the bartolome-ble-toolkit to connect to bluetooth periphals.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/control-cosmic-unicorn-with-timeular/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/timeular.gif&#34; alt=&#34;/images/timeular.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Have you ever wanted to create a physical display that responds to real-world interactions? In this tutorial, we&amp;rsquo;ll build a fascinating IoT project that combines Bluetooth Low Energy (BLE), WiFi, and LED matrix displays to create a responsive system where rotating a physical device instantly updates a display. You need a timeular tracker and a cosmic unicorn 32x32 matrix to actually be able to build this. But even if you do not own any of these components you can still learn how to setup a web server on a Raspberry PI Pico w and how to use the bartolome-ble-toolkit to connect to bluetooth periphals.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

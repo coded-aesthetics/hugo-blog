@@ -5,11 +5,8 @@ tags = ["ble", "bluetooth", "columbus globes", "timeular", "go"]
 categories = ["Programming", "Go"]
 author = "Jan"
 description = "Hacking the Columbus video pen and Timeular tracker"
+title = "Introducing Bartolome BLE Toolkit: A Go Library for Bluetooth Low Energy Devices featuring support for Columbus Video Pens and Timeular Trackers"
 +++
-
-# Introducing Bartolome BLE Toolkit: A Go Library for Bluetooth Low Energy Devices featuring support for Columbus Video Pens and Timeular Trackers
-
----
 
 Working with Bluetooth Low Energy (BLE) devices can be challenging, especially when you need to manage multiple devices simultaneously with robust connection handling. That's why I created the **Bartolome BLE Toolkit** – a modular Go library. I used it to hack into the Columbus Video Pens and Timeular activity trackers, so their signal can be used to build your own applications. The library comes with extensible support for any BLE device.
 

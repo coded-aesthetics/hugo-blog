@@ -5,13 +5,9 @@ tags = ["ray-marching", "3d-graphics", "raspberry-pi", "micropython", "cosmic-un
 categories = ["Programming", "Hardware"]
 author = "Jan"
 description = "How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix using ray marching and dual-script optimization"
+title = "Building a Real-Time Ray Marching Renderer for the Cosmic Unicorn"
+subtitle = "How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix"
 +++
-
-# Building a Real-Time Ray Marching Renderer for the Cosmic Unicorn
-
-*How I brought 3D ray-traced graphics to a tiny 32×32 LED matrix*
-
----
 
 ![/images/ezgif-6a87ddae8c0d19.gif](/images/ezgif-6a87ddae8c0d19.gif)
 

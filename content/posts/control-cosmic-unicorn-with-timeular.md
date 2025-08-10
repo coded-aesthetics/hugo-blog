@@ -8,10 +8,6 @@ description = "Roll the dice, light up the unicorn"
 title = "Using Timeular Tracker to display dice rolls on the Cosmic Unicorn"
 +++
 
-# Using Timeular Tracker to display dice rolls on the Cosmic Unicorn
-
----
-
 ![/images/timeular.gif](/images/timeular.gif)
 
 Have you ever wanted to create a physical display that responds to real-world interactions? In this tutorial, we'll build a fascinating IoT project that combines Bluetooth Low Energy (BLE), WiFi, and LED matrix displays to create a responsive system where rotating a physical device instantly updates a display. You need a timeular tracker and a cosmic unicorn 32x32 matrix to actually be able to build this. But even if you do not own any of these components you can still learn how to setup a web server on a Raspberry PI Pico w and how to use the bartolome-ble-toolkit to connect to bluetooth periphals.

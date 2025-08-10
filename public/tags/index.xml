@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on coded-aesthetics</title>
-    <link>https://hugo-blog-eosin-omega.vercel.app/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Aug 2025 11:01:40 +0200</lastBuildDate>
-    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ble</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/ble/</link>
+      <link>http://localhost:1313/tags/ble/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/ble/</guid>
+      <guid>http://localhost:1313/tags/ble/</guid>
       <description></description>
     </item>
     <item>
       <title>Bluetooth</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/bluetooth/</link>
+      <link>http://localhost:1313/tags/bluetooth/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/bluetooth/</guid>
+      <guid>http://localhost:1313/tags/bluetooth/</guid>
       <description></description>
     </item>
     <item>
       <title>Columbus Globes</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/columbus-globes/</link>
+      <link>http://localhost:1313/tags/columbus-globes/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/columbus-globes/</guid>
+      <guid>http://localhost:1313/tags/columbus-globes/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Timeular</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/timeular/</link>
+      <link>http://localhost:1313/tags/timeular/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/timeular/</guid>
+      <guid>http://localhost:1313/tags/timeular/</guid>
       <description></description>
     </item>
     <item>
       <title>Cosmic-Unicorn</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</link>
+      <link>http://localhost:1313/tags/cosmic-unicorn/</link>
       <pubDate>Sun, 10 Aug 2025 10:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/cosmic-unicorn/</guid>
+      <guid>http://localhost:1313/tags/cosmic-unicorn/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry Pi Pico W</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi-pico-w/</link>
+      <link>http://localhost:1313/tags/raspberry-pi-pico-w/</link>
       <pubDate>Sun, 10 Aug 2025 10:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi-pico-w/</guid>
+      <guid>http://localhost:1313/tags/raspberry-pi-pico-w/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Server</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/web-server/</link>
+      <link>http://localhost:1313/tags/web-server/</link>
       <pubDate>Sun, 10 Aug 2025 10:01:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/web-server/</guid>
+      <guid>http://localhost:1313/tags/web-server/</guid>
       <description></description>
     </item>
     <item>
       <title>3d-Graphics</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/3d-graphics/</link>
+      <link>http://localhost:1313/tags/3d-graphics/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/3d-graphics/</guid>
+      <guid>http://localhost:1313/tags/3d-graphics/</guid>
       <description></description>
     </item>
     <item>
       <title>Micropython</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/micropython/</link>
+      <link>http://localhost:1313/tags/micropython/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/micropython/</guid>
+      <guid>http://localhost:1313/tags/micropython/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry-Pi</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi/</link>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/raspberry-pi/</guid>
+      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     <item>
       <title>Ray-Marching</title>
-      <link>https://hugo-blog-eosin-omega.vercel.app/tags/ray-marching/</link>
+      <link>http://localhost:1313/tags/ray-marching/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>https://hugo-blog-eosin-omega.vercel.app/tags/ray-marching/</guid>
+      <guid>http://localhost:1313/tags/ray-marching/</guid>
       <description></description>
     </item>
   </channel>
