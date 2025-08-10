@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on coded-aesthetics</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://hugo-blog-eosin-omega.vercel.app/categories/</link>
     <description>Recent content in Categories on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Aug 2025 11:01:40 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-blog-eosin-omega.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go</title>
-      <link>http://localhost:1313/categories/go/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/categories/go/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>http://localhost:1313/categories/go/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/categories/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/categories/programming/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/categories/programming/</link>
       <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
-      <guid>http://localhost:1313/categories/programming/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/categories/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>MicroPython</title>
-      <link>http://localhost:1313/categories/micropython/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/categories/micropython/</link>
       <pubDate>Sun, 10 Aug 2025 10:01:40 +0200</pubDate>
-      <guid>http://localhost:1313/categories/micropython/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/categories/micropython/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware</title>
-      <link>http://localhost:1313/categories/hardware/</link>
+      <link>https://hugo-blog-eosin-omega.vercel.app/categories/hardware/</link>
       <pubDate>Thu, 07 Aug 2025 13:21:40 +0200</pubDate>
-      <guid>http://localhost:1313/categories/hardware/</guid>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/categories/hardware/</guid>
       <description></description>
     </item>
   </channel>
