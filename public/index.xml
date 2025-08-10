@@ -6,8 +6,15 @@
     <description>Recent content on coded-aesthetics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Aug 2025 13:21:40 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 10 Aug 2025 11:01:40 +0200</lastBuildDate>
     <atom:link href="https://hugo-blog-eosin-omega.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://hugo-blog-eosin-omega.vercel.app/posts/bartolome-ble-toolkit/</link>
+      <pubDate>Sun, 10 Aug 2025 11:01:40 +0200</pubDate>
+      <guid>https://hugo-blog-eosin-omega.vercel.app/posts/bartolome-ble-toolkit/</guid>
+      <description>&lt;h1 id=&#34;introducing-bartolome-ble-toolkit-a-go-library-for-bluetooth-low-energy-devices-featuring-support-for-columbus-video-pens-and-timeular-trackers&#34;&gt;Introducing Bartolome BLE Toolkit: A Go Library for Bluetooth Low Energy Devices featuring support for Columbus Video Pens and Timeular Trackers&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Working with Bluetooth Low Energy (BLE) devices can be challenging, especially when you need to manage multiple devices simultaneously with robust connection handling. That&amp;rsquo;s why I created the &lt;strong&gt;Bartolome BLE Toolkit&lt;/strong&gt; – a modular Go library. I used it to hack into the Columbus Video Pens and Timeular activity trackers, so their signal can be used to build your own applications. The library comes with extensible support for any BLE device.&lt;/p&gt;</description>
+    </item>
     <item>
       <title></title>
       <link>https://hugo-blog-eosin-omega.vercel.app/posts/ray-marching-cosmic-unicorn/</link>
